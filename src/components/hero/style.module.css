@@ -1,0 +1,27 @@
+.hero{
+    height: 100dvh;
+    background-image: url("/edit/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero__box{
+    padding-block-start: 363px;
+}
+.hero__title{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 104.918% */
+    text-transform: uppercase;
+}
+.hero__description{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+    text-transform: uppercase;
+}
