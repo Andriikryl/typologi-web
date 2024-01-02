@@ -4,40 +4,13 @@ import { Container } from "../container/Container";
 import Link from "next/link";
 import Image from "next/image";
 
-const dataNavLinks = [
-  {
-    id: 1,
-    title: "Products",
-    href: "/products",
-  },
-  {
-    id: 2,
-    title: "Diagnostic",
-    href: "/diagnostic",
-  },
-  {
-    id: 3,
-    title: "ABOUT",
-    href: "/about",
-  },
-];
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <Container>
         <div className={styles.header__box}>
-          <nav>
-            <ul>
-              {dataNavLinks.map(({ id, title, href }) => {
-                return (
-                  <li key={id}>
-                    <Link href={href}>{title}</Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+
           <Link href={"/"}>
             <Image
               src="/logo/logo.svg"
