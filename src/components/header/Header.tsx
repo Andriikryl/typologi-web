@@ -3,14 +3,15 @@ import styles from "./style.module.css";
 import { Container } from "../container/Container";
 import Link from "next/link";
 import Image from "next/image";
-
+import Nav from "./nav/Nav";
+import HeaderControls from "./headerControls/HeaderControls";
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <Container>
         <div className={styles.header__box}>
-
+          <Nav />
           <Link href={"/"}>
             <Image
               src="/logo/logo.svg"
@@ -20,37 +21,7 @@ export default function Header() {
             />
           </Link>
           <div>
-            <ul>
-              <li>
-                <Link href={"/"}>
-                  <Image
-                    src="/navigateIcons/search.svg"
-                    width={16}
-                    height={16}
-                    alt="Typology paris"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"}>Global</Link>
-              </li>
-              <li>
-                <Link href={"/"}>Login</Link>
-              </li>
-              <li>
-                <Link href={"/"}>
-                  <Image
-                    src="/navigateIcons/heart.svg"
-                    width={16}
-                    height={16}
-                    alt="Typology paris"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"}>cart</Link>
-              </li>
-            </ul>
+            <HeaderControls />
           </div>
         </div>
       </Container>
