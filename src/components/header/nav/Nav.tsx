@@ -23,11 +23,13 @@ const dataNavLinks = [
 export default function Nav() {
   return (
     <nav>
-      <ul>
+      <ul role="list" className={styles.list}>
         {dataNavLinks.map(({ id, title, href }) => {
           return (
             <li key={id}>
-              <Link href={href}>{title}</Link>
+              <Link className={styles.list__link} href={href}>
+                {title}
+              </Link>
             </li>
           );
         })}
