@@ -4,6 +4,9 @@
 .lg__card{
     max-width: 564px;
 }
+.md__card{
+    max-width: 270px;
+}
 .item__descitpion{
     color: #050505;
     font-family: Product Sans Infanity;

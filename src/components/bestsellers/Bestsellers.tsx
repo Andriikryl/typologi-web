@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./style.module.css";
 import { Container } from "../container/Container";
-import Image from "next/image";
 import ProductCard from "../productCard/ProductCard";
+import { bestsellersData } from "@/data/data";
+
 export default function Bestsellers() {
   return (
     <section className={styles.bestsellers}>
@@ -22,6 +23,23 @@ export default function Bestsellers() {
             width={564}
             height={692}
           />
+          <div>
+            {bestsellersData.map(
+              ({ id, size, src, description, info, width, height }) => {
+                return (
+                  <ProductCard
+                    key={id}
+                    size={size}
+                    src={src}
+                    description={description}
+                    info={info}
+                    width={width}
+                    height={height}
+                  />
+                );
+              }
+            )}
+          </div>
         </div>
       </Container>
     </section>
