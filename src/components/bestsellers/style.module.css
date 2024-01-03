@@ -1,0 +1,69 @@
+.bestsellers{
+    padding-block-start: 73px;
+    padding-block-end: 100px;
+    background: #FBF9F7;
+}
+
+.bestsellers__container{
+    max-width: 1200px;
+}
+.bestsellers__description{
+    color: #909090;
+    font-family: Product Sans Infanity;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; 
+    margin-block-end: 55px;
+}
+.bestsellers__description span{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 140% */
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: #909090;
+    margin-block-end: 55px;
+}
+
+.bestsellers__title{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 114px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120px; /* 105.263% */
+    text-transform: uppercase;
+}
+
+/* =======================================card */
+
+.list__item{
+    max-width: 564px;
+    margin-bottom: 6px;
+}
+.item__descitpion{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-block-end: 27px;
+    text-align: end;
+}
+.list__info{
+    color: #050505;
+    font-family: Product Sans Infanity;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.5px; /* 145.833% */
+}
