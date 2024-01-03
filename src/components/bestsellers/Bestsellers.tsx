@@ -13,7 +13,7 @@ export default function Bestsellers() {
         </p>
         <div className={styles.line}></div>
         <h2 className={styles.bestsellers__title}>Bestsellers</h2>
-        <div>
+        <div className={styles.cards__wrapper}>
           <ProductCard
             size="lg"
             src="/bestsellers/item1.jpg"
@@ -23,7 +23,7 @@ export default function Bestsellers() {
             width={564}
             height={692}
           />
-          <div>
+          <div className={styles.md__wrapper}>
             {bestsellersData.map(
               ({ id, size, src, description, info, width, height }) => {
                 return (
