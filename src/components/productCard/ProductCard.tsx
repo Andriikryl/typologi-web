@@ -2,15 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import clsx from "clsx";
-
-interface ProductCardProps {
-  description: string;
-  src: string;
-  width: number;
-  height: number;
-  info: string;
-  size: string;
-}
+import { ProductCardProps } from "@/types/types";
 
 export default function ProductCard({
   description,
