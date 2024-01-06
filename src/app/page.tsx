@@ -4,6 +4,7 @@ import Hero from "@/components/hero/Hero";
 import Bestsellers from "@/components/bestsellers/Bestsellers";
 import ContactBlock from "@/components/contactBlock/ContactBlock";
 import Tinder from "@/components/tinder/Tinder";
+import Undesrstand from "@/components/understand/Undesrstand";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Bestsellers />
       <ContactBlock />
       <Tinder />
+      <Undesrstand />
     </>
   );
 }
