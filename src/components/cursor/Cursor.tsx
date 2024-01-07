@@ -16,6 +16,11 @@ export default function Cursor() {
     y: useSpring(mouse.y, smoothOptions),
   };
 
+  const smoothOptionsSide = { damping: 10, stiffness: 100, mass: 0.5 };
+  const smoothMouseSide = {
+    x: useSpring(mouse.x, smoothOptionsSide),
+    y: useSpring(mouse.y, smoothOptionsSide),
+  };
   const manageMouseMove = useCallback(
     (e: MouseEvent) => {
       const { clientX, clientY } = e;
@@ -39,6 +44,13 @@ export default function Cursor() {
           top: smoothMouse.y,
         }}
         className={styles.cursor}
+      ></motion.div>
+      <motion.div
+        style={{
+          left: smoothMouseSide.x,
+          top: smoothMouseSide.y,
+        }}
+        className={styles.cursor__side}
       ></motion.div>
     </div>
   );

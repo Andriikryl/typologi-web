@@ -2,7 +2,19 @@
     position: fixed;
     width: 45px;
     height: 45px;
-    background-color: black;
+    background-color: tomato;
+    mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
+    z-index: 1000;
+}
+.cursor__side{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    border: 1px solid black;
 }
