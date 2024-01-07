@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import styles from "./style.module.css";
 import { Container } from "../container/Container";
+import clsx from "clsx";
 
 export default function Undesrstand() {
   return (
