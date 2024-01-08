@@ -3,26 +3,19 @@ import React, { ReactNode, useState } from "react";
 
 interface HoveredBoxProps {
   children: ReactNode;
-  onHoverChange: any;
 }
 
-export default function HoveredBox({
-  children,
-  onHoverChange,
-}: HoveredBoxProps) {
+export default function HoveredBox({ children }: HoveredBoxProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-    onHoverChange(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    onHoverChange(false);
-  };
-
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+      }}
+    >
       {children}
     </div>
   );
