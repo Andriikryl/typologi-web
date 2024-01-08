@@ -8,7 +8,7 @@ interface GraphProps {
   step: number;
   classGraph?: string;
   classReng?: string;
-  cildren?: ReactNode;
+  children?: ReactNode;
 }
 
 export default function Graph({
@@ -17,13 +17,13 @@ export default function Graph({
   step,
   classGraph,
   classReng,
-  cildren,
+  children,
 }: GraphProps) {
   return (
     <div className={classGraph}>
       {range(from, to + 1, step).map((num) => (
         <div key={num} className={classReng}>
-          {cildren}
+          {children}
         </div>
       ))}
     </div>
