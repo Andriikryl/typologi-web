@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Prewe from "@/components/prewe/Prewe";
 import Cursor from "@/components/cursor/Cursor";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header />
         <Cursor />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
