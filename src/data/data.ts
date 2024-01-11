@@ -25,6 +25,7 @@ export const dataNavLinks = [
       info: "Radiance Night Serum Botanical Blend With White Rose — from 26,50 €",
       width: 270,
       height: 320,
+      y: 0,
     },
     {
       id: "2",
@@ -34,6 +35,7 @@ export const dataNavLinks = [
       info: "Radiance Night Serum Botanical Blend With White Rose — from 26,50 €",
       width: 270,
       height: 320,
+      y: "lg"
     },
     {
       id: "3",
@@ -43,6 +45,7 @@ export const dataNavLinks = [
       info: "Radiance Night Serum Botanical Blend With White Rose — from 26,50 €",
       width: 270,
       height: 320,
+      y: "md",
     },
     {
       id: "4",
@@ -52,5 +55,6 @@ export const dataNavLinks = [
       info: "Radiance Night Serum Botanical Blend With White Rose — from 26,50 €",
       width: 270,
       height: 320,
+      y: "lg"
     },
   ];
