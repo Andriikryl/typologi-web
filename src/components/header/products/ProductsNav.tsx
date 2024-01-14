@@ -20,15 +20,15 @@ export default function ProductsNav({
   return (
     <FocusLock returnFocus={true}>
       <RemoveScroll>
-        <div className={styles.wrapper} style={style}>
+        <motion.div className={styles.wrapper} style={style} layout>
           <div className={styles.backdrop} onClick={handleDismiss} />
           <div className={styles.drawer}>
-            <div>{children}</div>
+            <div className={styles.list__box}>{children}</div>
             <button className={styles.closeBtn} onClick={handleDismiss}>
               close
             </button>
           </div>
-        </div>
+        </motion.div>
       </RemoveScroll>
     </FocusLock>
   );
@@ -41,9 +41,7 @@ function useEscapeKey(callback: () => void) {
         callback();
       }
     }
-
     window.addEventListener("keydown", handleKeyDown);
-
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };

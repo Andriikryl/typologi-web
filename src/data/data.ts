@@ -1,18 +1,45 @@
 export const dataNavLinks = [
     {
       id: 1,
-      title: "Products",
-      href: "/products",
-    },
-    {
-      id: 2,
       title: "Diagnostic",
       href: "/diagnostic",
     },
     {
-      id: 3,
+      id: 2,
       title: "ABOUT",
       href: "/about",
+    },
+  ];
+  export const dataProductLinks = [
+    {
+      id: 1,
+      title: "By edit",
+      href: "/",
+    },
+    {
+      id: 2,
+      title: "Face care",
+      href: "/FaceCare",
+    },
+    {
+      id: 3,
+      title: "Stage of skin ageing",
+      href: "/StageOfSkinAgeing",
+    },
+    {
+      id: 4,
+      title: "Body and hair care",
+      href: "/",
+    },
+    {
+      id: 5,
+      title: "By concern",
+      href: "/",
+    },
+    {
+      id: 6,
+      title: "Diagnostic",
+      href: "/",
     },
   ];
 

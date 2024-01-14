@@ -16,3 +16,26 @@
     line-height: 13px; /* 100% */
     text-transform: uppercase;
 }
+
+.product__list{
+    padding-block-start: 80px;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product__item{
+    padding-inline-start: 40px;
+}
+
+.product__link{
+    color: #909090;
+    font-family: Product Sans Infanity;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}

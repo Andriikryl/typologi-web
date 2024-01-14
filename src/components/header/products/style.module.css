@@ -1,13 +1,38 @@
 .wrapper{
-    width: 70%;
+    width: 100%;
     height: 100%;
-    background-color: aqua;
+    background: #FBF9F7;
     position: fixed;
     right: 0;
-    top: 0;   
+    top: 48px;
+    padding-block-start: 100px;   
     transition: all 500ms ease-in-out;
 }
 .backdrop{
-    background-color: tomato;
-    width: 100%;
+    border-top: 0.25px solid #909090;
+}
+
+.drawer{
+    max-width: 355px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    border-right: 0.25px solid #909090;
+}
+
+.closeBtn{
+    cursor: pointer;
+    color: #909090;
+    font-family: Product Sans Infanity;
+    font-size: 24px;
+    margin-block-end: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid rgb(79, 62, 59);
+    padding: 10px;
 }

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 import Link from "next/link";
-import { dataNavLinks } from "@/data/data";
+import { dataNavLinks, dataProductLinks } from "@/data/data";
 import { AnimatePresence } from "framer-motion";
 import ProductsNav from "../products/ProductsNav";
 
@@ -16,8 +16,10 @@ export default function Nav() {
     <>
       <nav>
         <ul role="list" className={styles.list}>
-          <li className={styles.list__link} onClick={handleClick}>
-            products
+          <li onClick={handleClick}>
+            <Link href={"#"} className={styles.list__link}>
+              Products
+            </Link>
           </li>
           {dataNavLinks.map(({ id, title, href }) => {
             return (
@@ -34,21 +36,18 @@ export default function Nav() {
         {activeState && (
           <ProductsNav
             handleDismiss={handleClick}
-            // style={{ transform: `translateX(${translateX})` }}
+            style={{ transform: `translateX(${translateX})` }}
           >
-            <ul className={styles.navigationList}>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Gallery</a>
-              </li>
-              <li>
-                <a href="">Photographers</a>
-              </li>
-              <li>
-                <a href="">Submit Work</a>
-              </li>
+            <ul className={styles.product__list} role="list">
+              {dataProductLinks.map(({ id, title, href }) => {
+                return (
+                  <li key={id} className={styles.product__item}>
+                    <Link className={styles.product__link} href={href}>
+                      {title}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </ProductsNav>
         )}
